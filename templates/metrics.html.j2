@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Special App Metrics</title>
+  </head>
+  <body>
+    {% for metric_key, metric_value in metrics.items() -%}
+        {{ metric_key }}={{ metric_value }}<br>
+    {% endfor %}
+  </body>
+</html>

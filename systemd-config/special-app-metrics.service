@@ -1,0 +1,13 @@
+[Unit]
+Description=Flask application to fetch metrics from special app
+After=network.target
+
+[Service]
+Type=simple
+User=pythonapp
+WorkingDirectory=/opt/animated-potato
+ExecStart=/opt/animated-potato/scripts/startup.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
